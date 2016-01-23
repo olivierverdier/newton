@@ -81,8 +81,7 @@ class Test_FSolve(Harness, unittest.TestCase):
     solver_class = FSolve
     @unittest.skip("FSolve does not work with complex")
     def test_complex(self):
-        raise 
+        raise
 
 class Test_MultipleSolver(Test_FSolve):
     solver_class = MultipleSolver
-

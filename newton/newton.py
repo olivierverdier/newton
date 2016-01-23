@@ -120,6 +120,3 @@ class MultipleSolver(object):
                 return root
         else:
             raise last_exception
-
-
-
