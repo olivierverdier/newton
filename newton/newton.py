@@ -81,8 +81,6 @@ class Newton(RootSolver):
             x += incr
             if nl.norm(incr) < self.tol:
                 break
-##          if self.is_zero(x):
-##              break
         else:
             raise self.DidNotConverge(u"Newton algorithm did not converge after %d iterations. Dx=%.2e" % (i, nl.norm(incr)))
         self.required_iter = i
